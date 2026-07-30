@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RICH BEAUTY SALON | Ваше преображение — наше искусство</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2d1417",
+                        "tertiary-fixed-dim": "#ccc5c4",
+                        "secondary": "#775659",
+                        "surface-dim": "#e7d6d6",
+                        "inverse-on-surface": "#feedec",
+                        "surface-bright": "#fff8f7",
+                        "on-secondary-fixed-variant": "#5e3e41",
+                        "on-surface-variant": "#504444",
+                        "outline-variant": "#d4c2c3",
+                        "on-surface": "#221919",
+                        "surface-container-highest": "#f0dfde",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#1e1b1b",
+                        "on-primary-fixed": "#301216",
+                        "on-tertiary-container": "#524e4d",
+                        "secondary-fixed": "#ffdadc",
+                        "on-background": "#221919",
+                        "on-primary-container": "#6b4448",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#ffd2d5",
+                        "tertiary": "#625d5d",
+                        "primary-fixed": "#ffdadc",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#fff0f0",
+                        "on-primary-fixed-variant": "#623c40",
+                        "tertiary-container": "#c6bfbe",
+                        "surface-tint": "#7c5357",
+                        "primary-container": "#e8b4b8",
+                        "surface-variant": "#f0dfde",
+                        "background": "#fff8f7",
+                        "primary": "#7c5357",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#eeb9bd",
+                        "surface": "#fff8f7",
+                        "secondary-fixed-dim": "#e7bcbf",
+                        "tertiary-fixed": "#e8e1e0",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#7a585b",
+                        "surface-container-high": "#f6e4e4",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a4645",
+                        "inverse-surface": "#382e2e",
+                        "outline": "#827474",
+                        "surface-container": "#fceae9",
+                        "primary-fixed-dim": "#eeb9bd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-padding": "80px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Manrope"],
+                        "display-lg": ["Playfair Display"],
+                        "label-sm": ["Manrope"],
+                        "label-md": ["Manrope"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(34, 25, 25, 0.4), rgba(34, 25, 25, 0.8));
+        }
+        .luxury-shadow {
+            box-shadow: 0 20px 40px -15px rgba(124, 83, 87, 0.15);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-outline-variant/30 h-16 flex justify-between items-center px-margin-mobile">
+<div class="flex items-center gap-2 text-primary cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-display-lg-mobile text-display-lg-mobile tracking-tighter text-primary">RICH</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-label-md text-label-md text-primary font-semibold hover:text-primary-container transition-colors cursor-pointer">RU | KZ</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex flex-col justify-end pb-section-padding px-margin-mobile">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, high-fashion close-up of a glamorous woman with flawless skin and elegant hairstyling in a luxury salon setting. The lighting is soft and golden, accentuating rich textures of silk and gold jewelry. The background is a blurred high-end interior with cream and charcoal tones, evoking an atmosphere of exclusive tranquility and premium beauty care." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuACSvHun8P5Q4hz-htptgAnV9tqDKrgSfloSUHrwrzZmr5ONyalXYfiNijhLH4DU13Fu1upB1_ixVSMQXCv4baOlh8HJ67kzGLx7m-HYhDmEVjFWfUvaZhHoXt_DM3QaTcKqRx_CVSIIWQAszV6cpbF_mwFzTrBnqfiNQadqmjdf-k6Loke5xtboPJDA-A_umQMNmDS-HhUDU1jwodufKZq4OfGOZZQxnzbz5-k_f6LbmtBX-I5jXjSLg')">
+</div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-[600px] animate-fade-in-up">
+<h1 class="font-display-lg-mobile text-[48px] leading-tight text-surface-bright mb-4 uppercase tracking-wider">
+            RICH<br/>BEAUTY SALON
+        </h1>
+<p class="font-body-lg text-surface-variant mb-8 border-l-2 border-primary pl-4">
+            Ваше преображение — наше искусство
+        </p>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary font-label-md text-label-md rounded-none hover:bg-primary-container transition-all duration-300 luxury-shadow group uppercase tracking-widest" href="https://wa.me/77055813995" target="_blank">
+            ЗАПИСАТЬСЯ В WHATSAPP
+            <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Services Bento Section -->
+<section class="py-section-padding px-margin-mobile bg-surface-bright" id="services">
+<div class="mb-12">
+<span class="font-label-md text-label-md text-primary mb-2 block uppercase tracking-widest">НАШИ УСЛУГИ</span>
+<h2 class="font-headline-md text-headline-md text-on-background">Искусство Красоты</h2>
+</div>
+<div class="bento-grid">
+<!-- Service Card 1 -->
+<div class="col-span-2 relative aspect-[16/10] overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Close up of a professional stylist creating a sophisticated haircut in a minimalist, modern salon. Soft focus on the shears and the model's healthy, shining hair. The lighting is bright and editorial, using a palette of creams and subtle gold reflections to convey high-end precision." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrAGfmUY5dirXHp_odOOYtAwEGwexFfRMhC-h7gFnwjEYR-LByYZ7iMYBzDhlVUSr9FmU2HD7JmGLQd6eu-U7zNMboTqe4_H8B6XoFFSXuczsTTPHR_7bu_jFFcW8hU2C1FSFPoa5F64IXgjQ3eXNpgKTEqEWFi7XjfLA_CQrbpoznwvsXfbEgKXLxHgYPRNdVchj8ji1MCTmW1IM_GwO535WDWu4NY64kGrPitOMCEmEfXXv2QW1N0w')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="font-headline-sm text-headline-sm text-surface-bright">Стрижки и укладки</h3>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="relative aspect-square overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Exquisite detail of a luxury manicure service. Minimalist aesthetic with focus on perfectly manicured nails and hands against a soft neutral background. High-key lighting highlights the precision and cleanliness of the process, maintaining the salon's gold and charcoal brand identity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBseeQhrhBVb8N1TCiksT9W0FF2a5h5vEm3MLLYG6TfmXa4U21Gj8YYwt_zS5eC1-3tQCmZFc3VmpRZBYyaOntFcMF_CEe_kn1TDhS5kdj9jH7UEK_JKkkMfmhgBO2XOl82uZEkMXtI9OoA5D_n31fDS89CsTalwxAOHfDt_JdNLv1Ep4kxffkB5p82eiK_xUvjMrRMqLXzrcvFtMEDgV6R3RcgYTr_kEenP035BrQoTzE_9C8y5Hz-bA')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="font-label-md text-label-md text-surface-bright uppercase">Маникюр</h3>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="relative aspect-square overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Professional makeup artist applying high-end cosmetics. Focus on the sophisticated tools and the glowing complexion of the client. The atmosphere is calm and luxurious with warm lighting and a focus on premium beauty products in a minimalist cream-toned setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMAPrtE1yKWVicLNn-pPID1FJvVngeRkZawarevCacsJe-N433x9aqEcmcuf9hL-B8RY68TKpK226G2327EaUrhP5AQ7S5BO7p4KQ3I2Ahpe-VAPCuzF3YKEc9vYnSB3-IoninXfzA0370lEEsq2QUt4Plip306VqeqkGmTvXWOoAX391HUj65xUeIffl_fj1c6Aaoc7eKRVdHqVVKhQ_pDnDJbkZVlFOxlHEOwHUQ-SQe9O_YlmgSDA')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="font-label-md text-label-md text-surface-bright uppercase">Макияж</h3>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="col-span-2 relative aspect-[16/8] overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Serene facial treatment scene in a spa environment. High-end aesthetic featuring botanical extracts and advanced skincare tools. Soft, diffused lighting creates a sense of deep relaxation and exclusive wellness. The scene uses a palette of off-whites and soft gold accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDamzLzHitJd5G2btwOUGLVZ1myckqm9BIqCx_Y88uHU7Kr96nK8eyB9E6Q_b5WeYfvRaeBdYFNpi4nM7lfxk5S4OcRPkl1hqPYlfZ0yffZw804NquKxH-EIjt0-y9vYTLx3QaiTPx20yeaXrPn_FnnUEVowDLwEpMBhQB1ZEHWS4i9_dZFofvI0Im7xcIvFWGO0pbqYsRbtnSVaVAqNBAIyufTfR4iOzCqB8IDEixiaHSF9dlhFd2rxw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="font-headline-sm text-headline-sm text-surface-bright">Уход за лицом</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-section-padding px-margin-mobile bg-surface-container-low" id="location">
+<div class="max-w-[600px] mx-auto text-center">
+<h2 class="font-headline-md text-headline-md text-on-background mb-4">Мы находимся здесь</h2>
+<div class="flex items-center justify-center gap-2 mb-8 text-secondary">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<p class="font-body-lg">мкр. Юбилейный, 28</p>
+</div>
+<div class="relative aspect-video w-full rounded-none overflow-hidden mb-8 border border-outline-variant/30">
+<div class="w-full h-full bg-cover bg-center" data-location="Almaty Yubileyny 28" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDrZPr7jrFNJhK_abzEG1PHsYqv6pr5uyZ16rS4k_YmyQCvt36L3pz9Rwq_mx8tobhZoQfGdzHzgxUBr77TOS-0ppw-PguOfEODVXLQIwuPeq-yE3LOi9d83E1oGoZK9tZmQrcefIryN8h6Zf-WMMnS_brhhFGnXVBE2gQZQeJ9Zrli6uU3wAxMnI6FWb48TwT5SZGuIkoAC7iUn_msNu0eD9O6bXWCUm0JDIPEkaKWllHSPOtL_HSmQw')">
+</div>
+</div>
+<a class="inline-flex items-center justify-center px-8 py-4 border border-primary text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all duration-300 w-full md:w-auto uppercase tracking-widest" href="https://2gis.kz/almaty/search/Юбилейный%2028" target="_blank">
+            ПОСТРОИТЬ МАРШРУТ В 2GIS
+            <span class="material-symbols-outlined ml-2">near_me</span>
+</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-highest flex flex-col items-center text-center px-margin-mobile gap-unit">
+<div class="font-headline-sm text-headline-sm text-primary mb-4 tracking-widest">RICH</div>
+<div class="flex flex-col gap-2 mb-8">
+<p class="font-body-md text-on-surface">Режим работы: 10:00 - 20:00</p>
+<p class="font-body-md text-on-surface">мкр. Юбилейный, 28</p>
+</div>
+<div class="flex gap-6 mb-8">
+<a class="text-on-secondary-container hover:text-primary transition-colors" href="#">
+<span class="font-label-md text-label-md uppercase tracking-widest">INSTAGRAM</span>
+</a>
+<a class="text-on-secondary-container hover:text-primary transition-colors" href="https://wa.me/77055813995">
+<span class="font-label-md text-label-md uppercase tracking-widest">WHATSAPP</span>
+</a>
+</div>
+<div class="border-t border-outline-variant/30 pt-8 w-full">
+<p class="font-label-sm text-[10px] text-on-secondary-container tracking-widest">
+            © 2024 RICH BEAUTY SALON. ALL RIGHTS RESERVED.
+        </p>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface-container-lowest border-t border-outline-variant/20 flex justify-around items-center h-20 pb-safe px-4 shadow-sm md:hidden">
+<a class="flex flex-col items-center justify-center text-primary bg-primary-container/20 rounded-full py-1 px-4 scale-95 active:scale-90 duration-150 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary opacity-70 hover:bg-surface-container-high transition-all scale-95 active:scale-90 duration-150" href="#services">
+<span class="material-symbols-outlined">rebase_edit</span>
+<span class="font-label-sm text-label-sm mt-1">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary opacity-70 hover:bg-surface-container-high transition-all scale-95 active:scale-90 duration-150" href="#location">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label-sm text-label-sm mt-1">Location</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary opacity-70 hover:bg-surface-container-high transition-all scale-95 active:scale-90 duration-150" href="https://wa.me/77055813995">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="font-label-sm text-label-sm mt-1">Book</span>
+</a>
+</nav>
+<script>
+    // Simple Intersection Observer for reveal animations
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-8');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+        observer.observe(section);
+    });
+
+    // Instant show for hero
+    const hero = document.querySelector('section');
+    hero.classList.remove('opacity-0', 'translate-y-8');
+</script>
+</body></html>
